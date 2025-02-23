@@ -1,0 +1,30 @@
+
+
+services:
+
+  app:
+    build: . 
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URI=mongodb://mongodb/users
+      - JWT_SECRET=AQUISECRETOKENBYEMER
+      - JWT_EXPIRES_IN=1h
+      - JWT_REFRESH_TOKEN=EMERSECRET
+      - JWT_RESET_TOKEN=EMERSECRET
+      - EMAIL=emermdeveloper@gmail.com
+      - EMAIL_PASS=sgfvmrmrkffxoegt
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:6.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+
+volumes:
+  mongodb_data:
+    name: mongodb_data
