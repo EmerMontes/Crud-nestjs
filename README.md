@@ -5,15 +5,9 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-  
 </p>
 
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-📌 **Project Description**
+ ## 📌 Project Description
 
 This project is a robust RESTful API built with **NestJS**, designed to handle user management efficiently and securely. The API implements **JWT authentication** alongside a **refresh token** strategy, ensuring secure and seamless user sessions.
 
@@ -30,4 +24,4 @@ This project is a robust RESTful API built with **NestJS**, designed to handle u
 - **JWT** - JSON Web Tokens for secure authentication.  
 - **Mongoose** - MongoDB object modeling for Node.js.  
 - **Nodemailer** - For sending recovery emails.
-- **Swagger** - For documentation Api.
+- **Swagger** - For the documentation of Api.
